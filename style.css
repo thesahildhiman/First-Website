@@ -1,0 +1,71 @@
+html{
+    /* to set the font-family inside the overall html and also body can be used to set the style within the body of the website*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* header h1 -> also work here because h1 is descendent as well as direct child */
+header>h1{
+    font-weight: 400;
+}
+/* html -> root element, bydefault fontSize - 16px */
+/* 1rem = 16px */
+/* px unit is not responsive */
+/* rem, vh, vw are responsive units */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+li{
+    font-size: 1.5rem;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}
+nav ul{
+    /* display - flex arrange the child elements side by side after applying display-flex to parent element. */
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+/* if we not give width to nav then it is compacted upto the elements it have inside. and elements are not justify after applying the justify-content property.So we gave the width to nav element */
+nav{
+    /* position - relative property allows the element to move top bottum left right from its default position. */
+    position: relative;
+    top: .6rem;
+    width: 20rem;
+    /* background-color: aliceblue; */
+}
+
+.showcase-img{
+    /* vw -> viewport width, means element(img) always maintains the 95% of the viewport and make image responsive according to the viewport */
+    width: 95vw;
+    margin: 1rem;
+}
+
+article{
+    display: flex;
+    margin: 1.5rem;
+}
+.container{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    background-color: antiquewhite;
+}
+
+footer{
+    width: 100vw;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    font-size: 1.5rem;
+}
+/* justify-content -> align the items horizontally inside the flexBox
+    align-items -> align the items vertially inside the flexBox
+*/
